@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>学生端 - 智慧校园社保系统</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body class="student-body">
+
+    <!-- 顶部导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 shadow">
+        <a class="navbar-brand text-cyan" href="#">智慧校园社保系统</a>
+        <div class="ms-auto d-flex align-items-center">
+            <span class="me-3 text-light">欢迎你，百乐多</span>
+            <img src="https://i.pravatar.cc/40" class="rounded-circle me-3" alt="avatar">
+            <a href="/" class="btn btn-outline-info btn-sm">退出登录</a>
+        </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <div class="container mt-4">
+        <div class="row g-4">
+
+            <!-- 个人信息模块 -->
+            <div class="col-md-6">
+                <div class="card module-card">
+                    <div class="card-body">
+                        <h5 class="card-title">个人信息</h5>
+                        <p>姓名：百乐多</p>
+                        <p>学号：2023123456</p>
+                        <p>社保卡绑定：已绑定</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 医保余额模块 -->
+            <div class="col-md-6">
+                <div class="card module-card">
+                    <div class="card-body">
+                        <h5 class="card-title">医保余额</h5>
+                        <p>当前余额：¥ 326.50</p>
+                        <p>状态：正常</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 快捷入口模块 -->
+            <div class="col-md-12">
+                <div class="card module-card">
+                    <div class="card-body">
+                        <h5 class="card-title">快捷入口</h5>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="register.html" class="btn btn-cyan">挂号</a>
+                            <a href="payment.html" class="btn btn-cyan">缴费</a>
+                            <a href="balance.html" class="btn btn-cyan">余额查询</a>
+                            <a href="access.html" class="btn btn-cyan">门禁通行</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 通知与优惠模块 -->
+            <div class="col-md-12">
+                <div class="card module-card">
+                    <div class="card-body">
+                        <h5 class="card-title">最新通知与优惠</h5>
+                        <ul>
+                            <li>2025-09-01 校园食堂支付享 8 折优惠</li>
+                            <li>2025-08-30 校医院挂号窗口已支持社保卡</li>
+                            <li>2025-08-25 运动场门禁升级完成，支持 NFC 校园卡</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

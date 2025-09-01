@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>智慧校园社保 - 缴费服务</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{ background:#0d1b2a; color:#fff; font-family:"Microsoft YaHei",sans-serif; }
+        .navbar{ box-shadow:0 2px 18px rgba(0,255,255,0.25); }
+        .card{ background:rgba(255,255,255,0.06); border:none; border-radius:16px; box-shadow:0 0 18px rgba(0,255,255,0.2); }
+        .card h5{ color:#00f5d4; }
+        .btn-cyan{ background:linear-gradient(90deg,#00f5d4,#00bbf9); border:none; color:#000; font-weight:600; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark px-3">
+        <a class="navbar-brand" href="/student">智慧校园社保</a>
+        <span>缴费服务</span>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row g-4">
+            <!-- 缴费入口 -->
+            <div class="col-lg-6">
+                <div class="card p-4">
+                    <h5>缴费项目</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">缴费类型</label>
+                            <select class="form-select">
+                                <option>学费</option>
+                                <option>住宿费</option>
+                                <option>医疗费用</option>
+                                <option>图书馆罚款</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">缴费金额</label>
+                            <input type="number" class="form-control" placeholder="请输入金额">
+                        </div>
+                        <button class="btn btn-cyan w-100">立即缴费</button>
+                    </form>
+                </div>
+            </div>
+            <!-- 缴费历史 -->
+            <div class="col-lg-6">
+                <div class="card p-4">
+                    <h5>缴费记录</h5>
+                    <table class="table table-dark table-hover mt-3">
+                        <thead><tr><th>日期</th><th>类型</th><th>金额</th><th>状态</th></tr></thead>
+                        <tbody>
+                            <tr><td>2025-08-15</td><td>住宿费</td><td>¥1200</td><td>成功</td></tr>
+                            <tr><td>2025-08-25</td><td>医疗费用</td><td>¥200</td><td>待支付</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 缴费须知 -->
+            <div class="col-12">
+                <div class="card p-4">
+                    <h5>缴费须知</h5>
+                    <p style="color:white">本系统支持微信支付、银行卡支付和校园社保卡余额支付。请确认金额后再提交，支付完成后可在历史记录查看详情。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
