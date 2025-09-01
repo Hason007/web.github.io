@@ -30,9 +30,15 @@
             const errorMsg = document.getElementById("errorMsg");
 
             if(username === "student" && password === "123456") {
+                // 显示错误信息
+                errorMsg.textContent = "";
+                errorMsg.classList.add("d-none");
                 // 登录成功跳转学生页面
                 window.location.href = "student.html";
             } else if(username === "admin" && password === "123456") {
+                // 显示错误信息
+                errorMsg.textContent = "";
+                errorMsg.classList.add("d-none");
                 // 登录成功跳转管理员页面
                 window.location.href = "./page/index.html";
             } else {
